@@ -1,0 +1,35 @@
+.text-section {
+  width: 500px;
+  color: $whiteColor;
+  position: relative;
+  top: 4px;
+  right: 1px;
+  @include mqMaxW(1240px) {
+    margin-top: 5.5rem;
+  }
+  @include mqMaxW(620px) {
+    width: 100%;
+    padding: 0 2rem;
+    text-align: center;
+  }
+
+  .text-section__title {
+    font-size: 50px;
+    line-height: 55px;
+    margin-bottom: 1.85rem;
+    letter-spacing: -0.5px;
+    @include mqMaxW(620px) {
+      max-width: 350px;
+      margin-inline: auto;
+      font-size: 28px;
+      line-height: 36px;
+      margin-bottom: 1.25rem;
+      letter-spacing: -0.25px;
+    }
+  }
+
+  .text-section__desc {
+    line-height: 26px;
+    letter-spacing: 0.05px;
+  }
+}

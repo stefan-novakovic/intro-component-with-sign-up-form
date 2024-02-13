@@ -1,0 +1,147 @@
+.form-and-button-section {
+  width: 540px;
+  position: relative;
+  left: 1px;
+  @include mqMaxW(1240px) {
+    margin-bottom: 4.445rem;
+  }
+  @include mqMaxW(620px) {
+    width: 100%;
+    padding: 0 1.5rem;
+  }
+
+  .form-and-button-section__btn {
+    color: $whiteColor;
+    background-color: $blueColor;
+    letter-spacing: -0.35px;
+    font-weight: 400;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    padding: 1.2rem 3rem 1.05rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    top: 1px;
+
+    .try-it-free-btn-text-highlight {
+      font-weight: 600;
+    }
+  }
+
+  .form-and-button-section__btn:hover,
+  .form-and-button-section__btn:focus-visible {
+    filter: brightness(110%);
+  }
+  .form-and-button-section__btn:active {
+    filter: brightness(90%);
+  }
+
+  .form-and-button-section__form {
+    @include flexCenter;
+    flex-direction: column;
+    background-color: $whiteColor;
+    padding: 2.5rem;
+    border-radius: 10px;
+
+    @include mqMaxW(620px) {
+      padding: 1.5rem 1.5rem 1rem;
+    }
+  }
+
+  .input-wrapper {
+    margin-bottom: 1.25rem;
+    width: 100%;
+    position: relative;
+    @include mqMaxW(620px) {
+      margin-bottom: 1rem;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 1.15rem 4rem 0.9rem 2rem;
+      border: 1px solid lightgray;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 14px;
+
+      @include mqMaxW(415px) {
+        padding: 1.15rem 3rem 0.9rem 1.1rem;
+      }
+    }
+
+    .form-input:focus {
+      outline: none;
+    }
+
+    .input-error-icon {
+      display: none;
+      position: absolute;
+      top: 50%;
+      right: 27px;
+      transform: translateY(-100%);
+
+      @include mqMaxW(415px) {
+        right: 15px;
+      }
+    }
+
+    .input-error-text {
+      display: none;
+      color: $redColor;
+      margin-top: 8px;
+      margin-right: 2px;
+      float: right;
+      font-size: 11px;
+      font-style: oblique;
+    }
+
+    .input-error-outline {
+      border: 1px solid $redColor;
+    }
+
+    .email-example-placeholder-color::placeholder {
+      color: $redColor;
+    }
+  }
+
+  .form-and-button-section__form__btn {
+    color: $whiteColor;
+    background-color: $greenColor;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    width: 100%;
+    padding: 1.15rem 0 0.85rem;
+    margin-bottom: 0.85rem;
+    @include mqMaxW(620px) {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .form-and-button-section__form__btn:hover,
+  .form-and-button-section__form__btn:focus-visible {
+    filter: brightness(110%);
+  }
+
+  .form-and-button-section__form__btn:active {
+    filter: brightness(90%);
+  }
+
+  .form-and-button-section__form__terms-text {
+    font-size: 11px;
+    color: $grayishBlueColor;
+    margin-bottom: 0.25rem;
+
+    @include mqMaxW(620px) {
+      padding: 0 1rem 0;
+      text-align: center;
+      line-height: 22px;
+    }
+
+    .terms-highlight {
+      color: $redColor;
+      font-weight: 700;
+    }
+  }
+}

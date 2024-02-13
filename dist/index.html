@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Stefan Novaković">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="./images/favicon.ico">
+  <link rel="stylesheet" href="css/main.min.css">
+
+  <script defer src="js/main.js"></script>
+
+  <title>Intro component with sign up form</title>
+</head>
+
+<body>
+  <main>
+    <section id="text-section" class="text-section">
+      <h1 class="text-section__title">Learn to code by watching others</h1>
+      <p class="text-section__desc">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.
+      </p>
+    </section>
+
+    <section id="form-and-button-section" class="form-and-button-section">
+      <button class="form-and-button-section__btn">
+        <span class="try-it-free-btn-text-highlight">Try it free 7 days</span>
+        then $20/mo. thereafter
+      </button>
+      <form id="form" class="form-and-button-section__form" action="https://httpbin.org/post" method="post">
+
+        <div class="input-wrapper">
+          <label for="first-name">First name</label>
+          <input type="text" name="first-name" id="first-name" class="form-input" placeholder="First Name"
+            autocomplete="off">
+          <p id="first-name-error-text" class="input-error-text">First Name cannot be empty</p>
+          <img id="first-name-error-icon" class="input-error-icon" src="images/icon-error.svg" alt="Error icon">
+        </div>
+
+        <div class="input-wrapper">
+          <label for="last-name">Last name</label>
+          <input type="text" name="last-name" id="last-name" class="form-input" placeholder="Last Name"
+            autocomplete="off">
+          <p id="last-name-error-text" class="input-error-text">Last Name cannot be empty</p>
+          <img id="last-name-error-icon" class="input-error-icon" src="images/icon-error.svg" alt="Error icon">
+        </div>
+
+        <div class="input-wrapper">
+          <label for="email">Email adress</label>
+          <input type="text" name="email" id="email" class="form-input" placeholder="Email Address" autocomplete="off">
+          <p id="email-error-text" class="input-error-text">Looks like this is not an email</p>
+          <img id="email-error-icon" class="input-error-icon" src="images/icon-error.svg" alt="Error icon">
+        </div>
+
+        <div class="input-wrapper">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" class="form-input" placeholder="Password"
+            autocomplete="off">
+          <p id="password-error-text" class="input-error-text">Password cannot be empty</p>
+          <img id="password-error-icon" class="input-error-icon" src="images/icon-error.svg" alt="Error icon">
+        </div>
+
+        <button id="submit-btn" class="form-and-button-section__form__btn">CLAIM YOUR FREE TRIAL</button>
+        <p class="form-and-button-section__form__terms-text">
+          By clicking the button, you are agreeing to our
+          <span class="terms-highlight">Terms and Services</span>
+        </p>
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>

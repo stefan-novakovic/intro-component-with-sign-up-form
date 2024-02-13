@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  @include flexCenter;
+  @include mqMaxW(1439px) {
+    background: url(../../dist/images/bg-intro-desktop.png), $redColor;
+  }
+  @include mqMaxW(375px) {
+    background: url(../../dist/images/bg-intro-mobile.png), $redColor;
+    background-size: cover;
+  }
+}
+
+main {
+  width: 1440px;
+  height: 800px;
+  background: url(../../dist/images/bg-intro-desktop.png), $redColor;
+  background-repeat: no-repeat;
+  background-position: center;
+  @include flexCenter;
+  gap: 4.3rem;
+
+  @include mqMaxW(1439px) {
+    background: none;
+  }
+
+  @include mqMaxW(1240px) {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+}
+
+label {
+  @include offscreen;
+}
+
+input,
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+button {
+  cursor: pointer;
+}
