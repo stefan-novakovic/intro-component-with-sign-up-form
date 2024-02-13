@@ -1,2 +1,2 @@
 Intro component with sign up form\
-DEMO:
+DEMO: https://intro-component-sf-novakovic.netlify.app/
