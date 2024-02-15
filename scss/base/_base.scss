@@ -19,27 +19,21 @@ body {
   width: 100%;
   min-height: 100vh;
   @include flexCenter;
-  @include mqMaxW(1439px) {
-    background: url(../../dist/images/bg-intro-desktop.png), $redColor;
-  }
+  background: url("/images/bg-intro-desktop.png"), $redColor;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
   @include mqMaxW(375px) {
-    background: url(../../dist/images/bg-intro-mobile.png), $redColor;
-    background-size: cover;
+    background: url("/images/bg-intro-mobile.png"), $redColor;
   }
 }
 
 main {
   width: 1440px;
   height: 800px;
-  background: url(../../dist/images/bg-intro-desktop.png), $redColor;
-  background-repeat: no-repeat;
-  background-position: center;
   @include flexCenter;
   gap: 4.3rem;
-
-  @include mqMaxW(1439px) {
-    background: none;
-  }
 
   @include mqMaxW(1240px) {
     flex-direction: column;
